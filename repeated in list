@@ -1,0 +1,22 @@
+nums2 = [3,3,4,2,2,4,4,3,4,4]
+
+d1 = {}
+for i in nums2:
+  if i in d1:
+    d1[i]=d1[i]+1
+  else:
+    d1[i]=1
+
+print(d1)
+greter=None
+for i,j in d1.items():
+  if greter==None:
+    greter=d1[i]
+  elif greter<d1[i]:
+    greter=j
+print(greter)
+
+for i,j in d1.items():
+  if greter==j:
+    print(i)
+  
